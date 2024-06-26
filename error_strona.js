@@ -24,12 +24,19 @@ function draw() {
   image(img, 800, 220);
   noStroke();
   button (width/2,400,200,50,'Try again'); //2
+  button (1800, 20, 100, 30);
+  fill (255);
+  textSize (18);
+  text ('exit', 1832, 41);
 }
 
 
 function mouseReleased(){    //ebu
 if (checkMouseOver(width/2,400,200,50) == true){
  window.open ('https://glink-182.github.io/first-page/ ', '_self');
+ }
+ if (checkMouseOver(1800, 20, 100, 30) == true){
+ window.open ('https://activistgames.github.io/startingPoints/', '_self');
 }
 
 
